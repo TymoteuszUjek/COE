@@ -1,0 +1,18 @@
+{% block content %}
+    <body>
+        <div class="row rounded text-center d-flex justify-content-center" style="background-color: DarkGray">
+        </div>
+
+        <div class="row mt-4">
+            <div class="col text-center d-flex justify-content-center" style="background-color: DarkGray; color: black; font-weight: bold;">
+                <p>You were logged out. Thank you for playing</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col text-center d-flex justify-content-center">
+                <a class="btn btn-primary border border-secondary" href="{% url 'user:register' %}" style="background-color: DarkGray; color: black; font-weight: bold;">Register</a>
+                <a class="btn btn-primary border border-secondary ml-3" href="{% url 'user:login' %}" style="background-color: DarkGray; color: black; font-weight: bold;">Login</a>
+            </div>
+        </div>
+    </body>
+{% endblock content %}
